@@ -37,7 +37,7 @@ export default function About() {
           <span className="inline-block text-xs tracking-[0.2em] uppercase text-primary font-medium mb-3">
             Our Story
           </span>
-          <h2 className="text-4xl md:text-5xl font-light">About Baby Nathan</h2>
+          <h2 className="text-4xl md:text-5xl font-light">About Artist</h2>
         </div>
 
         {/* Two-column layout */}
@@ -77,10 +77,10 @@ export default function About() {
           >
             <div className="space-y-5">
               <p className="text-lg md:text-xl text-foreground/80 leading-relaxed font-light">
-                At <span className="text-foreground font-medium">Baby Nathan</span>, we believe every piece of art tells a story.
+                Iam <span className="text-foreground font-medium">Baby Nathan</span>, I believe every piece of art tells a story.
               </p>
               <p className="text-base md:text-lg text-foreground/65 leading-relaxed font-light">
-                We specialize in handcrafted pencil sketches, charcoal portraits, watercolor, oil paintings, and custom wall art — all created with deep attention to detail and emotion.
+                I have specialize in handcrafted pencil sketches, charcoal portraits, watercolor, oil paintings, and custom wall art — all created with deep attention to detail and emotion.
               </p>
               <p className="text-base md:text-lg text-foreground/65 leading-relaxed font-light">
                 Each artwork is more than just a drawing. It&apos;s a memory, a feeling, and a timeless expression of your most valuable moments.
@@ -115,7 +115,7 @@ export default function About() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-full font-light hover:bg-accent transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
               >
-                Commission Your Art
+                Book Your slot now
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
