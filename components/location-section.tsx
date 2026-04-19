@@ -26,7 +26,7 @@ export default function LocationSection() {
         </div>
 
         <p className="mt-5 text-gray-500 text-sm">
-          📦 Pan-India delivery available · 📱{" "}
+          📦 Pan-India delivery available ·{" "}
           <a
             href="tel:+919363131475"
             className="text-orange-500 font-medium hover:underline"
