@@ -1,115 +1,104 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import Image from "next/image";
+import Link from "next/link";
+import { Star } from "lucide-react";
 
-export default function Hero() {
-  const [floatingCards, setFloatingCards] = useState<number[]>([0, 1, 2, 3]);
-
-  const artworkImages = [
-    '/hero-artwork-1.jpg',
-    '/hero-artwork-2.jpg',
-    '/hero-artwork-3.jpg',
-    '/hero-artwork-4.jpg',
-  ];
-
+export function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 pb-12 md:pt-32 md:pb-20 overflow-hidden">
-      {/* Background floating cards */}
-      <div className="absolute inset-0 overflow-hidden">
-        {floatingCards.map((idx) => (
-          <div
-            key={idx}
-            className="absolute animate-float"
-            style={{
-              left: `${20 + idx * 18}%`,
-              top: `${30 + (idx % 2) * 20}%`,
-              animation: `float ${4 + idx}s ease-in-out infinite`,
-              animationDelay: `${idx * 0.5}s`,
-            }}
-          >
-            <div className="group relative w-32 h-40 md:w-40 md:h-52 rounded-2xl overflow-hidden soft-shadow-md hover:soft-shadow-lg transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
-              <Image
-                src={artworkImages[idx]}
-                alt={`Artwork ${idx + 1}`}
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/0 group-hover:to-black/10 transition-all" />
-            </div>
+    <section
+      id="home"
+      className="min-h-screen bg-[#F8F5F0] flex flex-col items-center justify-center px-4 py-20"
+    >
+      {/* 3-column grid: left images | text | right images */}
+      <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-[1fr_2fr_1fr] items-center gap-6 md:gap-10">
+
+        {/* LEFT — 2 artworks stacked */}
+        <div className="hidden md:flex flex-col gap-5 items-end">
+          <div className="w-44 h-52 rounded-2xl overflow-hidden shadow-xl rotate-[-4deg] hover:rotate-0 transition-transform duration-300">
+            <Image
+              src="/hero-artwork-1.jpg"
+              alt="Artwork 1"
+              width={176}
+              height={208}
+              className="w-full h-full object-cover"
+            />
           </div>
-        ))}
-      </div>
+          <div className="w-40 h-48 rounded-2xl overflow-hidden shadow-xl rotate-[3deg] hover:rotate-0 transition-transform duration-300">
+            <Image
+              src="/hero-artwork-2.jpg"
+              alt="Artwork 2"
+              width={160}
+              height={192}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center">
-        <div className="space-y-6 md:space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-tight text-balance">
-            Turn Your Memories into Timeless Handcrafted Art
+        {/* CENTER — text content */}
+        <div className="flex flex-col items-center text-center gap-5">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight">
+            Turn Your Memories into{" "}
+            <span className="text-orange-500">Timeless Handcrafted Art</span>
           </h1>
-
-          <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed">
-            Art that speaks to your soul.<br className="hidden md:block" />
+          <p className="text-gray-500 text-base md:text-lg max-w-md leading-relaxed">
+            Art that speaks to your soul.
+            <br />
             Handmade pencil and charcoal portraits crafted with emotion.
           </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <a
-              href={`https://wa.me/919363131475?text=${encodeURIComponent('Hi, I would like to order a portrait. Here is my photo and details.')}`}
+          <div className="flex flex-wrap gap-4 justify-center mt-2">
+            <Link
+              href="https://wa.me/919363131475?text=Hi%2C%20I%20would%20like%20to%20order%20a%20portrait."
               target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 md:px-10 md:py-4 bg-primary text-primary-foreground rounded-full font-light hover:bg-accent transition-all duration-300 hover:shadow-lg"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-7 py-3 rounded-full shadow-md transition-colors duration-200"
             >
               Order on WhatsApp
-            </a>
-            <a
+            </Link>
+            <Link
               href="#gallery"
-              className="px-8 py-3 md:px-10 md:py-4 border-2 border-foreground/20 text-foreground rounded-full font-light hover:border-foreground hover:bg-white/50 transition-all duration-300"
+              className="border border-gray-300 hover:border-gray-500 text-gray-700 font-semibold px-7 py-3 rounded-full transition-colors duration-200"
             >
               View Gallery
-            </a>
+            </Link>
           </div>
+          <div className="flex items-center gap-1 text-sm text-gray-500 mt-1">
+            <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+            <span>Rated 4.0 by Happy Clients</span>
+          </div>
+        </div>
 
-          {/* Trust line */}
-          <div className="pt-6 md:pt-8">
-            <p className="text-sm md:text-base text-foreground/60">
-              ⭐ Rated 4.0 by Happy Clients
-            </p>
+        {/* RIGHT — 2 artworks stacked */}
+        <div className="hidden md:flex flex-col gap-5 items-start">
+          <div className="w-44 h-52 rounded-2xl overflow-hidden shadow-xl rotate-[5deg] hover:rotate-0 transition-transform duration-300">
+            <Image
+              src="/hero-artwork-3.jpg"
+              alt="Artwork 3"
+              width={176}
+              height={208}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-40 h-48 rounded-2xl overflow-hidden shadow-xl rotate-[-3deg] hover:rotate-0 transition-transform duration-300">
+            <Image
+              src="/hero-artwork-4.jpg"
+              alt="Artwork 4"
+              width={160}
+              height={192}
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
 
-      {/* Floating animation */}
-      <style jsx>{`
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0px) rotate(-2deg);
-          }
-          50% {
-            transform: translateY(-20px) rotate(2deg);
-          }
-        }
-
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-float {
-          animation: float 4s ease-in-out infinite;
-        }
-
-        .animate-fade-in {
-          animation: fade-in 0.8s ease-out forwards;
-        }
-      `}</style>
+      {/* Mobile: show 2 artworks in a row below text */}
+      <div className="flex md:hidden gap-4 mt-8 justify-center">
+        <div className="w-36 h-44 rounded-xl overflow-hidden shadow-lg rotate-[-3deg]">
+          <Image src="/hero-artwork-1.jpg" alt="Artwork 1" width={144} height={176} className="w-full h-full object-cover" />
+        </div>
+        <div className="w-36 h-44 rounded-xl overflow-hidden shadow-lg rotate-[3deg]">
+          <Image src="/hero-artwork-3.jpg" alt="Artwork 3" width={144} height={176} className="w-full h-full object-cover" />
+        </div>
+      </div>
     </section>
   );
 }
