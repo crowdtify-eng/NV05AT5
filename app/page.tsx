@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useState } from 'react';
 import Navbar from '@/components/navbar';
 import Hero from '@/components/hero';
@@ -15,7 +14,7 @@ import CTA from '@/components/cta';
 import Contact from '@/components/contact';
 import Footer from '@/components/footer';
 import WhatsAppButton from '@/components/whatsapp-button';
-import LocationSection  from "@/components/location-section";
+import LocationSection from '@/components/location-section';
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +23,6 @@ export default function Home() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
