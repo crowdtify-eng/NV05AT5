@@ -19,7 +19,7 @@ export default function Footer() {
                   className="object-contain"
                 />
               </div>
-              <span className="font-light text-lg tracking-wider">BANA ARTIST</span>
+              <span className="font-light text-lg tracking-wider">BANA ARTS</span>
             </div>
             <p className="text-white/70 font-light max-w-xs">
               Art that speaks to your soul.
