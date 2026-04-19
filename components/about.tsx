@@ -77,16 +77,16 @@ export default function About() {
           >
             <div className="space-y-5">
               <p className="text-lg md:text-xl text-foreground/80 leading-relaxed font-light">
-                I am <span className="text-foreground font-medium">Baby Nathan</span>, a passionate artist who believes every artwork tells a story.
+                Iam <span className="text-foreground font-medium">Baby Nathan</span>, I believe every piece of art tells a story.
               </p>
               <p className="text-base md:text-lg text-foreground/65 leading-relaxed font-light">
-                I specialize in handcrafted pencil sketches, charcoal portraits, watercolor and oil paintings, and custom wall art — each created with deep emotion and attention to detail.
+                I have specialize in handcrafted pencil sketches, charcoal portraits, watercolor, oil paintings, and custom wall art — all created with deep attention to detail and emotion.
               </p>
               <p className="text-base md:text-lg text-foreground/65 leading-relaxed font-light">
-                Inspired by life and nature, my work blends creativity with realism to turn memories into meaningful art. With professional experience, including an internship at SPIC and multiple certifications, I continue to refine my craft.
+                Each artwork is more than just a drawing. It&apos;s a memory, a feeling, and a timeless expression of your most valuable moments.
               </p>
               <p className="text-base md:text-lg text-foreground/65 leading-relaxed font-light">
-                My goal is simple — to transform your most cherished moments into timeless art that truly speaks to your soul.
+                Our goal is simple — to turn your memories into art that truly speaks to your soul.
               </p>
             </div>
 
