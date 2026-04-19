@@ -37,7 +37,7 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
               />
             </div>
             <span className="font-light text-sm tracking-[0.15em] uppercase">
-              Bana Artist
+              Bana Arts
             </span>
           </Link>
 
