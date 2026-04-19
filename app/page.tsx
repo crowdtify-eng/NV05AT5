@@ -43,7 +43,7 @@ export default function Home() {
       <Testimonials />
       <CTA />
       <Contact />
-   <LocationSection />
+      <LocationSection />
       <Footer />
       <WhatsAppButton />
     </main>
