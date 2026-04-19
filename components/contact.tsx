@@ -29,7 +29,7 @@ export default function Contact() {
           >
             <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">✉️</div>
             <h3 className="font-light text-lg mb-2">Email</h3>
-            <p className="text-foreground/60 text-center break-all">banaartist05@gmail.com</p>
+            <p className="text-foreground/60 text-center break-all">banaarts05@gmail.com</p>
           </a>
 
           {/* Instagram */}
