@@ -15,6 +15,7 @@ import CTA from '@/components/cta';
 import Contact from '@/components/contact';
 import Footer from '@/components/footer';
 import WhatsAppButton from '@/components/whatsapp-button';
+import { LocationSection } from "@/components/location-section";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,6 +43,7 @@ export default function Home() {
       <Testimonials />
       <CTA />
       <Contact />
+   <LocationSection />
       <Footer />
       <WhatsAppButton />
     </main>
