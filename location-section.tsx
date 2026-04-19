@@ -1,4 +1,4 @@
-export function LocationSection() {
+export default function LocationSection() {
   return (
     <section id="location" className="py-16 bg-[#F8F5F0] px-4">
       <div className="max-w-4xl mx-auto text-center">
@@ -26,8 +26,11 @@ export function LocationSection() {
         </div>
 
         <p className="mt-5 text-gray-500 text-sm">
-          📦 Pan-India delivery available · {" "}
-          <a href="tel:+919363131475" className="text-orange-500 font-medium hover:underline">
+          📦 Pan-India delivery available · 📱{" "}
+          <a
+            href="tel:+919363131475"
+            className="text-orange-500 font-medium hover:underline"
+          >
             +91 93631 31475
           </a>
         </p>
