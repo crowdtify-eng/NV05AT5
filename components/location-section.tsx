@@ -14,7 +14,7 @@ export default function LocationSection() {
 
         <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
           <iframe
-            src="https://www.google.com/maps/place/Thanasekaran+Nagar/@8.8154291,78.1319822,21z/data=!4m10!1m2!2m1!1s4%2F367A+Thanasekar+Nagar,+Thoothukkudi+Tamil+Nadu+-+628002!3m6!1s0x3b03ef006e266f51:0x15a399c1c5631536!8m2!3d8.8155159!4d78.1323277!15sCjk0LzM2N0EgVGhhbmFzZWthciBOYWdhciwgVGhvb3RodWtrdWRpIFRhbWlsIE5hZHUgLSA2MjgwMDKSARNob3VzaW5nX2RldmVsb3BtZW504AEA!16s%2Fg%2F11wvlxxsst?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31542.66204385147!2d78.09796562406945!3d8.80177820063278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03ef006e266f51%3A0x15a399c1c5631536!2sThanasekaran%20Nagar!5e0!3m2!1sen!2sin!4v1776597434569!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             width="100%"
             height="420"
             style={{ border: 0 }}
