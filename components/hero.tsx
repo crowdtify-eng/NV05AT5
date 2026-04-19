@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Star } from "lucide-react";
 
-export function HeroSection() {
+export default function Hero() {
   return (
     <section
       id="home"
@@ -93,10 +93,22 @@ export function HeroSection() {
       {/* Mobile: show 2 artworks in a row below text */}
       <div className="flex md:hidden gap-4 mt-8 justify-center">
         <div className="w-36 h-44 rounded-xl overflow-hidden shadow-lg rotate-[-3deg]">
-          <Image src="/hero-artwork-1.jpg" alt="Artwork 1" width={144} height={176} className="w-full h-full object-cover" />
+          <Image
+            src="/hero-artwork-1.jpg"
+            alt="Artwork 1"
+            width={144}
+            height={176}
+            className="w-full h-full object-cover"
+          />
         </div>
         <div className="w-36 h-44 rounded-xl overflow-hidden shadow-lg rotate-[3deg]">
-          <Image src="/hero-artwork-3.jpg" alt="Artwork 3" width={144} height={176} className="w-full h-full object-cover" />
+          <Image
+            src="/hero-artwork-3.jpg"
+            alt="Artwork 3"
+            width={144}
+            height={176}
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>
